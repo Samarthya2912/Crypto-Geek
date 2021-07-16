@@ -21,11 +21,7 @@ ul{
     align-items: stretch;
     margin-right: 15vw;
     height: inherit;
-}
-
-/* .links li:hover{
-    background-color: rgb(138, 15, 253);
-} */
+} 
 
 .social-media{
     width: 9vw;
@@ -72,17 +68,29 @@ ul li a{
     font-weight: 700;
 }
 
+.list{
+    background: transparent;
+    color: #fff;
+    border: solid #fff 1px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5px;
+    display: none;
+}
+
 @media screen and (max-width: 415px) {
     nav{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        transition: 0.4s ease;
     }
 
     nav > *{
         width: 100vw;
         margin: 0;
-        /* border: red solid 1px; */
     }
 
     .company-name-logo{
@@ -91,14 +99,58 @@ ul li a{
     }
 
     .links{
+        margin: 10px 0 0 0;
         width: 100vw;
         box-sizing: border-box;
         /* padding: 5px; */
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-media{
+        width: 25vw;
+        margin: 5px 0; 
+    }
+
+    
+    .links > *{
+        margin: 5px 0;
+    }
+    .signup-login{
+        width: 33vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 10vw; 
     }
 
     .links, .social-media, .signup-login{
+        transition: 0.4s ease;
+        /* border: solid red 1px;
+        overflow-y: hidden;
+        padding: 0;
+        margin: 0;
+        height: 0; */
         display: none;
+    }
+    
+    .visible{
+        display: flex;
+    }
+
+    /* .signup-login.visible{
+        display: flex;
+    } */
+
+    .list{
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+    }
+
+    .list:active{
+        background-color: white;
+        color: blueviolet;
     }
 }

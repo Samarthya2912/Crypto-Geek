@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { Fragment } from 'react';
 import './Navbar.css';
 
@@ -5,6 +6,7 @@ function Navbar() {
     return (
         <nav>
             <div className="company-name-logo">
+                <button className="list"><i className="bi bi-list"></i></button>
                 <i className="bi bi-currency-bitcoin"></i>
                 <span>CryptoGeek</span>
             </div>

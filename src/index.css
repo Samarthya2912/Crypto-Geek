@@ -21,5 +21,10 @@ code {
 @media screen and (max-width: 415px) {
   .cards-div{
     grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
   }
 }
