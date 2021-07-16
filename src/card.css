@@ -1,0 +1,25 @@
+.card{
+    width: 25vw;
+    height: auto;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    /* border: solid black 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.card img{
+    height: 10vw;
+    width: 10vw;
+    align-self: center;
+}
+
+.card h1, h2, h4{
+    margin: 0;
+    align-self: center;
+}

@@ -1,0 +1,104 @@
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 0 2vw;
+    width: 100vw;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    width: 30vw;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-right: 15vw;
+    height: inherit;
+}
+
+/* .links li:hover{
+    background-color: rgb(138, 15, 253);
+} */
+
+.social-media{
+    width: 9vw;
+    justify-content: space-between;
+    margin-right: 10vw;
+}
+
+.signup-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+}
+
+.signup-login div{
+    border: #fff solid 1.5px;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.bi{
+    font-size: larger;
+}
+
+.bi.bi-currency-bitcoin{
+    font-size: xx-large;
+}
+
+.company-name-logo{
+    display: flex;
+    justify-self: center;
+    align-items:baseline;
+    font-family: 'Varela Round', sans-serif;
+    margin-right: 5vw;
+}
+
+.company-name-logo span{
+    font-size: larger;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 415px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav > *{
+        width: 100vw;
+        margin: 0;
+        /* border: red solid 1px; */
+    }
+
+    .company-name-logo{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links{
+        width: 100vw;
+        box-sizing: border-box;
+        /* padding: 5px; */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .links, .social-media, .signup-login{
+        display: none;
+    }
+}
